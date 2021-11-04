@@ -28,7 +28,11 @@
 <script>
     function initAnswers() {
       AnswersExperienceFrame.init({
-        tokenHeader: window.YEXT_TOKENS.yextAuthToken.token,
+        "visitor": window.YEXT_AUTH.visitor,
+        "tokenHeader": window.YEXT_TOKEN.yextAuthToken.token
+      });
+      ANSWERS.init({
+        token: window.YEXT_TOKENS.yextAuthToken.token,
         visitor: window.YEXT_AUTH.visitor,
         experienceKey: "authorized-search-1",
         experienceVersion: "STAGING",
