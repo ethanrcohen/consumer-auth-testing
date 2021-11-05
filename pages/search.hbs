@@ -18,12 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
 
   {{>styles}}
-<link
-    rel="stylesheet"
-    type="text/css"
-    href="https://assets.sitescdn.net/answers-search-bar/v1.0/answers.css"
-  />
-  <script src="https://assets.sitescdn.net/answers-search-bar/v1.0/answerstemplates.compiled.min.js"></script>
   
 <script>
     function initAnswers() {
@@ -31,31 +25,8 @@
         "visitor": window.YEXT_AUTH.visitor,
         "tokenHeader": window.YEXT_TOKEN.yextAuthToken.token
       });
-      ANSWERS.init({
-        token: window.YEXT_TOKENS.yextAuthToken.token,
-        visitor: window.YEXT_AUTH.visitor,
-        experienceKey: "authorized-search-1",
-        experienceVersion: "STAGING",
-        locale: "en", // e.g. en
-        businessId: "3591490",
-        templateBundle: TemplateBundle.default,
-        onReady: function() {
-          ANSWERS.addComponent("SearchBar", {
-            container: ".search_form",
-            name: "search-bar", //Must be unique for every search bar on the same page
-            redirectUrl: "/search.html",
-            placeholderText: "Search...",
-          });
-        },
-      });
     }
   </script>
-    <script
-    src="https://assets.sitescdn.net/answers-search-bar/v1.0/answers.min.js"
-    onload="ANSWERS.domReady(initAnswers)"
-    async
-    defer
-  ></script>   
 </head>
     <div class="container mx-auto px-4">
         <body>
@@ -65,8 +36,9 @@
         <section class="bg-white py-8">
             <div class="container py-8 px-6 mx-auto">
                 <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl mb-8" href="#">About</a>
-                 <div id="answers-container"></div>
-              <script src="https://main-recapture--residual--outsmart-pgsdemo-com.preview.pagescdn.com/iframe.js"></script>
+
+                <div id="answers-container"></div>
+                <script src="https://master-gambling--garage--roulette-pgsdemo-com.preview.pagescdn.com/iframe.js"></script>
             </div>
             <div class="search_form"></div>
         </section>
